@@ -7,10 +7,13 @@ import com.example.prueba.Repository.IClienteRepository;
 import com.example.prueba.Repository.ICuentaRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 import java.util.Random;
 
+@Service
 @RequiredArgsConstructor
 public class CuentaService implements ICuentaService {
 
@@ -18,7 +21,7 @@ public class CuentaService implements ICuentaService {
     private final IClienteRepository clienteRepository;
 
     @Transactional
-    public Cuenta save(int id, String tipoCuenta, long GMF) {
+    public Cuenta crearCuenta(int id, String tipoCuenta, long GMF) {
         Cliente cliente = clienteRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Cliente no encontrado"));
 
@@ -39,7 +42,8 @@ public class CuentaService implements ICuentaService {
         return cuentaRepository.save(cuenta);
     }
 
-    private String generarNumeroCuenta(String tipoCuenta) {
+
+    public String generarNumeroCuenta(String tipoCuenta) {
         String prefix = tipoCuenta.equals("AHORRO") ? "53" : "33";
         StringBuilder numeroCuenta = new StringBuilder(prefix);
         Random random = new Random();
@@ -49,6 +53,7 @@ public class CuentaService implements ICuentaService {
         return numeroCuenta.toString();
     }
 
+    @Override
     public void actualizarSaldo(int id, double nuevoSaldo) {
         Cuenta cuenta = cuentaRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Cuenta no encontrada"));
@@ -62,6 +67,7 @@ public class CuentaService implements ICuentaService {
         cuentaRepository.save(cuenta);
     }
 
+    @Override
     public void cambiarEstado(int id, String nuevoEstado) {
         Cuenta cuenta = cuentaRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Cuenta no encontrada"));
@@ -73,5 +79,10 @@ public class CuentaService implements ICuentaService {
         cuenta.setEstado(nuevoEstado);
         cuenta.setFechaModificacion(String.valueOf(LocalDateTime.now()));
         cuentaRepository.save(cuenta);
+    }
+
+    @Override
+    public Optional<Cuenta> obtenerCuentaPorId(int id) {
+        return cuentaRepository.findById(id);
     }
 }

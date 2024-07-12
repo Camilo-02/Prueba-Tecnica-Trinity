@@ -37,6 +37,9 @@ public class Cuenta {
     @Column(name ="fechaMoficacion", length = 50, nullable = false )
     private String fechaModificacion;
 
+    @Column(name ="nuevoSaldo", length = 50, nullable = false)
+    private double nuevoSaldo;
+
     @ManyToOne
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
