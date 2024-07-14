@@ -2,7 +2,7 @@ package com.example.prueba.service;
 
 import com.example.prueba.Entity.Cliente;
 import com.example.prueba.Entity.Cuenta;
-import com.example.prueba.IService.ICuentaService;
+import com.example.prueba.service.IService.ICuentaService;
 import com.example.prueba.Repository.IClienteRepository;
 import com.example.prueba.Repository.ICuentaRepository;
 import jakarta.transaction.Transactional;
@@ -85,4 +85,5 @@ public class CuentaService implements ICuentaService {
     public Optional<Cuenta> obtenerCuentaPorId(int id) {
         return cuentaRepository.findById(id);
     }
+
 }

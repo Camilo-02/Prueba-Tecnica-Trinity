@@ -1,7 +1,7 @@
 package com.example.prueba.service;
 
 import com.example.prueba.Entity.Cliente;
-import com.example.prueba.IService.IClienteService;
+import com.example.prueba.service.IService.IClienteService;
 import com.example.prueba.Repository.IClienteRepository;
 import com.example.prueba.Repository.ICuentaRepository;
 import lombok.RequiredArgsConstructor;

@@ -14,7 +14,6 @@ import java.util.Set;
 @Getter
 @Setter
 @NoArgsConstructor
-
 @Entity
 @Table (name = "cliente")
 public class Cliente {
@@ -28,7 +27,7 @@ public class Cliente {
 
 
     @Column(name = "numeroIdentificacion", length = 50, nullable = true)
-    private int numeroIdentificacion;
+    private long numeroIdentificacion;
 
     @Column(name = "nombre", length = 30, nullable = true)
     @Size(min = 1)

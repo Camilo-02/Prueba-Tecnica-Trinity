@@ -5,10 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2733ad68-ba2b-40a0-a3c7-5f65509f8418" name="Changes" comment="Entidad Cliente, servicios personalizados">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Entity/Transaccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/ITransaccionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/TransaccionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/IService/ITransaccionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/TransaccionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/Entity/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Entity/Cuenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/IService/ICuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/IService/ICuentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/Entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Entity/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/IService/IClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/IService/IClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/IService/ICuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/IService/ICuentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/IClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/IClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/ICuentaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/ICuentaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/CuentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/CuentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/ClienteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/CuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/CuentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/Entity/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/Entity/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/IService/IClienteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/IService/ICuentaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/IClienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/IClienteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/ICuentaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/ICuentaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/ClienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/CuentaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/CuentaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/ClienteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/service/ClienteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/CuentaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/service/CuentaService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +66,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ClienteServiceTest.testListarClientes.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.PruebaApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -59,7 +83,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -68,7 +92,23 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.PruebaApplication">
+    <configuration name="ClienteServiceTest.testListarClientes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.prueba.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.prueba.Test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.prueba.Test.ClienteServiceTest" />
+      <option name="METHOD_NAME" value="testListarClientes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PruebaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="prueba" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.prueba.PruebaApplication" />
@@ -76,6 +116,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClienteServiceTest.testListarClientes" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -98,6 +143,9 @@
       <workItem from="1720714600319" duration="17031000" />
       <workItem from="1720762632940" duration="422000" />
       <workItem from="1720764005145" duration="9576000" />
+      <workItem from="1720903922206" duration="3173000" />
+      <workItem from="1720907240463" duration="1329000" />
+      <workItem from="1720937376579" duration="8979000" />
     </task>
     <task id="LOCAL-00001" summary="Entidad Cliente, servicios personalizados">
       <option name="closed" value="true" />

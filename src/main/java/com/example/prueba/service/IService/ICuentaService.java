@@ -1,4 +1,4 @@
-package com.example.prueba.IService;
+package com.example.prueba.service.IService;
 
 import com.example.prueba.Entity.Cuenta;
 

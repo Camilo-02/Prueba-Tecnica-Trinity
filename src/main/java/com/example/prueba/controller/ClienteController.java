@@ -2,7 +2,7 @@ package com.example.prueba.controller;
 
 
 import com.example.prueba.Entity.Cliente;
-import com.example.prueba.IService.IClienteService;
+import com.example.prueba.service.IService.IClienteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
