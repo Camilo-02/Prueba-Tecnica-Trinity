@@ -102,11 +102,10 @@ class ClienteServiceTest {
         when(iClienteRepository.save(clienteExistente)).thenReturn(clienteExistente);
 
         Cliente clienteActualizado = new Cliente(/* inicializar con valores actualizados */);
-        clienteActualizado.setId(idCliente);  // Asegúrate de establecer el ID del cliente actualizado
+        clienteActualizado.setId(idCliente);
 
         clienteService.update(clienteActualizado, idCliente);
 
-        // Puedes agregar más aserciones según sea necesario para verificar que la actualización fue correcta
         assertEquals(clienteExistente.getNombre(), clienteActualizado.getNombre());
     }
 
@@ -130,7 +129,6 @@ class ClienteServiceTest {
 
         clienteService.delete(idCliente);
 
-        // Verifica que el cliente se haya eliminado correctamente
     }
 
     @Test

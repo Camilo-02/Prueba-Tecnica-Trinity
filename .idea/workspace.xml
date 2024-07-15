@@ -5,35 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2733ad68-ba2b-40a0-a3c7-5f65509f8418" name="Changes" comment="Entidad Cliente, servicios personalizados">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/ClienteServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/ClienteControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/Entity/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Entity/Cuenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/IClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/IClienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/ICuentaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/ICuentaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/CuentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/CuentaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/TransaccionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/controller/TransaccionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/ClienteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/CuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/CuentaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/IService/IClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/IService/IClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/IService/ICuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/IService/ICuentaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/TransaccionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/TransaccionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/prueba/PruebaApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/Entity/Cuenta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/Entity/Cuenta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/IClienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/IClienteRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/ICuentaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/ICuentaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/ClienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/CuentaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/CuentaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/TransaccionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/controller/TransaccionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/ClienteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/CuentaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/IService/IClienteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/service/IService/IClienteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/IService/ICuentaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/service/IService/ICuentaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/TransaccionService$InsufficientFundsException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/TransaccionService$ResourceNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/TransaccionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/prueba/PruebaApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/ClienteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/ClienteServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/prueba/service/ClienteServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/prueba/service/ClienteServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,6 +49,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ClienteControllerTest.executor": "Run",
+    "JUnit.ClienteControllerTest.testFindAll.executor": "Run",
+    "JUnit.ClienteControllerTest.testSave.executor": "Debug",
     "JUnit.ClienteServiceTest.eliminarClienteConCuentasVinculadasTest.executor": "Run",
     "JUnit.ClienteServiceTest.eliminarClienteExistenteSinCuentasVinculadasTest.executor": "Run",
     "JUnit.ClienteServiceTest.executor": "Coverage",
@@ -123,7 +102,54 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClienteServiceTest">
+  <component name="RunManager" selected="JUnit.ClienteControllerTest">
+    <configuration name="ClienteControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.prueba.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.prueba.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.prueba.service.ClienteControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteControllerTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.prueba.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.prueba.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.prueba.service.ClienteControllerTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteControllerTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.prueba.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.prueba.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.prueba.service.ClienteControllerTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClienteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prueba" />
       <extension name="coverage">
@@ -155,54 +181,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClienteServiceTest.eliminarClienteExistenteSinCuentasVinculadasTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.prueba.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.prueba.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.prueba.service.ClienteServiceTest" />
-      <option name="METHOD_NAME" value="eliminarClienteExistenteSinCuentasVinculadasTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClienteServiceTest.listarClientesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.prueba.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.prueba.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.prueba.service.ClienteServiceTest" />
-      <option name="METHOD_NAME" value="listarClientesTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClienteServiceTest.testSaveClienteMayorEdad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.prueba.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.prueba.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.prueba.service.ClienteServiceTest" />
-      <option name="METHOD_NAME" value="testSaveClienteMayorEdad" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PruebaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="prueba" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.prueba.PruebaApplication" />
@@ -212,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClienteControllerTest" />
+        <item itemvalue="JUnit.ClienteControllerTest.testSave" />
+        <item itemvalue="JUnit.ClienteControllerTest.testFindAll" />
         <item itemvalue="JUnit.ClienteServiceTest" />
         <item itemvalue="JUnit.ClienteServiceTest.eliminarClienteConCuentasVinculadasTest" />
-        <item itemvalue="JUnit.ClienteServiceTest.eliminarClienteExistenteSinCuentasVinculadasTest" />
-        <item itemvalue="JUnit.ClienteServiceTest.testSaveClienteMayorEdad" />
-        <item itemvalue="JUnit.ClienteServiceTest.listarClientesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +221,7 @@
       <workItem from="1720764005145" duration="9576000" />
       <workItem from="1720903922206" duration="3173000" />
       <workItem from="1720907240463" duration="1329000" />
-      <workItem from="1720937376579" duration="30744000" />
+      <workItem from="1720937376579" duration="32256000" />
     </task>
     <task id="LOCAL-00001" summary="Entidad Cliente, servicios personalizados">
       <option name="closed" value="true" />
