@@ -14,7 +14,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class ClienteService implements IClienteService {
+public class ClienteServiceImpl implements IClienteService {
 
     private final IClienteRepository iClienteRepository;
     private final ICuentaRepository iCuentaRepository;
@@ -26,7 +26,7 @@ public class ClienteService implements IClienteService {
     }
 
     @Override
-    public Optional<Cliente> listarId(int id) {
+    public Optional<Cliente> listarId(long id) {
         return iClienteRepository.findById(id);
     }
 
@@ -46,13 +46,13 @@ public class ClienteService implements IClienteService {
 
 
     //----------------------------------------------------------------------------------
-    public void delete(int clienteId) {
-        Optional<Cliente> optionalCliente = iClienteRepository.findById(clienteId);
+    public void delete(long id) {
 
+        Optional<Cliente> optionalCliente = iClienteRepository.findById(id);
         if (optionalCliente.isPresent()) {
             Cliente cliente = optionalCliente.get();
 
-            if (ICuentaRepository.existsByCliente(cliente)) {
+            if (existsByCliente(id)) {
                 throw new IllegalArgumentException("El cliente tiene cuentas vinculadas y no puede ser eliminado.");
             } else {
                 iClienteRepository.delete(cliente);
@@ -65,7 +65,7 @@ public class ClienteService implements IClienteService {
 
     //--------------------------------------------------------------------------------
         @Override
-        public void update (Cliente cliente,int id){
+        public void update (Cliente cliente,long id){
             Optional<Cliente> optional = iClienteRepository.findById(id);
 
             if (optional.isPresent()) {
@@ -83,5 +83,16 @@ public class ClienteService implements IClienteService {
                 throw new RuntimeException(("No existe registro actual"));
             }
         }
+
+    public boolean existsByCliente(Long idCliente) {
+        Optional<Cliente> optionalCliente = iClienteRepository.findById(idCliente);
+        if (optionalCliente.isPresent()) {
+            Cliente cliente = optionalCliente.get();
+            return iCuentaRepository.countByCliente(cliente) > 0;
+        } else {
+            throw new IllegalArgumentException("Cliente no encontrado con ID: " + idCliente);
+        }
     }
+
+}
 

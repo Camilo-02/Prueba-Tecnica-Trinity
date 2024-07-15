@@ -2,7 +2,7 @@ package com.example.prueba.controller;
 
 
 import com.example.prueba.Entity.Transaccion;
-import com.example.prueba.service.TransaccionService;
+import com.example.prueba.service.TransaccionServiceImpl;
 import lombok.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/transacciones")
 public class TransaccionController {
 
-    private final TransaccionService transaccionService;
+    private final TransaccionServiceImpl transaccionService;
 
     @PostMapping("/transacciones")
     public ResponseEntity<Transaccion> realizarTransferencia(

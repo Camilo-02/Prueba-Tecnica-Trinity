@@ -15,13 +15,13 @@ import java.util.Random;
 
 @Service
 @RequiredArgsConstructor
-public class CuentaService implements ICuentaService {
+public class CuentaServiceImpl implements ICuentaService {
 
     private final ICuentaRepository cuentaRepository;
     private final IClienteRepository clienteRepository;
 
     @Transactional
-    public Cuenta crearCuenta(int id, String tipoCuenta, long GMF) {
+    public Cuenta crearCuenta(long id, String tipoCuenta, long GMF) {
         Cliente cliente = clienteRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Cliente no encontrado"));
 
@@ -54,7 +54,7 @@ public class CuentaService implements ICuentaService {
     }
 
     @Override
-    public void actualizarSaldo(int id, double nuevoSaldo) {
+    public void actualizarSaldo(long id, double nuevoSaldo) {
         Cuenta cuenta = cuentaRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Cuenta no encontrada"));
 
@@ -68,7 +68,7 @@ public class CuentaService implements ICuentaService {
     }
 
     @Override
-    public void cambiarEstado(int id, String nuevoEstado) {
+    public void cambiarEstado(long id, String nuevoEstado) {
         Cuenta cuenta = cuentaRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Cuenta no encontrada"));
 
@@ -82,7 +82,7 @@ public class CuentaService implements ICuentaService {
     }
 
     @Override
-    public Optional<Cuenta> obtenerCuentaPorId(int id) {
+    public Optional<Cuenta> obtenerCuentaPorId(long id) {
         return cuentaRepository.findById(id);
     }
 

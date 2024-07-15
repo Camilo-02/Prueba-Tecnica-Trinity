@@ -7,8 +7,8 @@ import java.util.Optional;
 
 public interface IClienteService {
      List<Cliente> listar();
-     Optional<Cliente> listarId(int id);
+     Optional<Cliente> listarId(long id);
      Cliente save (Cliente cliente);
-     void delete(int id);
-     void update(Cliente cliente, int id);
+     void delete(long id);
+     void update(Cliente cliente, long id);
 }

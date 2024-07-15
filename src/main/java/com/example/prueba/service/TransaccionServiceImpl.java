@@ -14,16 +14,16 @@ import java.time.LocalDateTime;
 
 @Service
 @RequiredArgsConstructor
-public class TransaccionService {
+public class TransaccionServiceImpl {
 
     private final ITransaccionRepository transaccionRepository;
     private final ICuentaRepository productoRepository;
 
     @Transactional
     public Transaccion realizarTransferencia(Long cuentaOrigenId, Long cuentaDestinoId, Double monto) {
-        Cuenta cuentaOrigen = productoRepository.findById(Math.toIntExact(cuentaOrigenId))
+        Cuenta cuentaOrigen = productoRepository.findById(cuentaOrigenId)
                 .orElseThrow(() -> new ResourceNotFoundException("Cuenta origen no encontrada"));
-        Cuenta cuentaDestino = productoRepository.findById(Math.toIntExact(cuentaDestinoId))
+        Cuenta cuentaDestino = productoRepository.findById(cuentaDestinoId)
                 .orElseThrow(() -> new ResourceNotFoundException("Cuenta destino no encontrada"));
 
         if (cuentaOrigen.getSaldo() < monto) {
@@ -70,4 +70,3 @@ public class TransaccionService {
     }
 
 }
-git

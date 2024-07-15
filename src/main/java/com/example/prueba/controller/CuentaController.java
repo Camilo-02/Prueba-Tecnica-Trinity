@@ -16,22 +16,22 @@ public class CuentaController {
     private  final ICuentaService cuentaService;
 
     @PostMapping("/crear")
-    public Cuenta crearCuenta(@RequestParam int id, @RequestParam String tipoCuenta, @RequestParam long GMF) {
+    public Cuenta crearCuenta(@RequestParam long id, @RequestParam String tipoCuenta, @RequestParam long GMF) {
         return cuentaService.crearCuenta(id, tipoCuenta, GMF);
     }
 
     @PutMapping("/{cuentaId}/actualizarSaldo")
-    public void actualizarSaldo(@PathVariable int id, @RequestParam double nuevoSaldo) {
+    public void actualizarSaldo(@PathVariable long id, @RequestParam double nuevoSaldo) {
         cuentaService.actualizarSaldo(id, nuevoSaldo);
     }
 
     @PutMapping("/{cuentaId}/cambiarEstado")
-    public void cambiarEstado(@PathVariable int id, @RequestParam String nuevoEstado) {
+    public void cambiarEstado(@PathVariable long id, @RequestParam String nuevoEstado) {
         cuentaService.cambiarEstado(id, nuevoEstado);
     }
 
     @GetMapping("/{cuentaId}")
-    public Cuenta obtenerCuentaPorId(@PathVariable int id) {
+    public Cuenta obtenerCuentaPorId(@PathVariable long id) {
         return cuentaService.obtenerCuentaPorId(id).orElseThrow(() -> new IllegalArgumentException("Cuenta no encontrada"));
     }
 
