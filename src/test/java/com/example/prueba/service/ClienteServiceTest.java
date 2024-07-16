@@ -137,7 +137,7 @@ class ClienteServiceTest {
         Cliente clienteExistente = new Cliente(/* inicializar con valores */);
 
         when(iClienteRepository.findById(idCliente)).thenReturn(Optional.of(clienteExistente));
-        when(iCuentaRepository.countByCliente(clienteExistente)).thenReturn(1L); // Simulación de cuenta vinculada
+        when(iCuentaRepository.countByCliente(clienteExistente)).thenReturn(1L);
 
         assertThrows(IllegalArgumentException.class, () -> clienteService.delete(idCliente));
     }
@@ -148,7 +148,7 @@ class ClienteServiceTest {
         Cliente clienteExistente = new Cliente(/* inicializar con valores */);
 
         when(iClienteRepository.findById(idCliente)).thenReturn(Optional.of(clienteExistente));
-        when(iCuentaRepository.countByCliente(clienteExistente)).thenReturn(1L); // Simulación de cuenta vinculada
+        when(iCuentaRepository.countByCliente(clienteExistente)).thenReturn(1L);
 
         boolean result = clienteService.existsByCliente(idCliente);
 

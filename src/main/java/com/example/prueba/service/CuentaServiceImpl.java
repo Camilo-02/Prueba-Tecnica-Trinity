@@ -42,7 +42,6 @@ public class CuentaServiceImpl implements ICuentaService {
         return cuentaRepository.save(cuenta);
     }
 
-
     public String generarNumeroCuenta(String tipoCuenta) {
         String prefix = tipoCuenta.equals("AHORRO") ? "53" : "33";
         StringBuilder numeroCuenta = new StringBuilder(prefix);
@@ -85,5 +84,4 @@ public class CuentaServiceImpl implements ICuentaService {
     public Optional<Cuenta> obtenerCuentaPorId(long id) {
         return cuentaRepository.findById(id);
     }
-
 }

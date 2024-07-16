@@ -1,7 +1,7 @@
 package com.example.prueba.Repository;
 
 import com.example.prueba.Entity.Transaccion;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface ITransaccionRepository extends JpaRepository <Transaccion, Long> {
+public interface ITransaccionRepository extends CrudRepository<Transaccion, Long> {
 }
