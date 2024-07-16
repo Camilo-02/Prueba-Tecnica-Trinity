@@ -35,7 +35,7 @@ public class CuentaServiceTest {
 
     @Test
     void testCrearCuenta() {
-        // Mocking client
+
         Cliente cliente = new Cliente();
         cliente.setId(1L);
 
@@ -44,7 +44,6 @@ public class CuentaServiceTest {
 
         Cuenta cuenta = cuentaService.crearCuenta(1L, "AHORRO", 0);
 
-        // Assertions
         assertNotNull(cuenta);
         assertEquals("AHORRO", cuenta.getTipoCuenta());
         assertEquals("ACTIVA", cuenta.getEstado());

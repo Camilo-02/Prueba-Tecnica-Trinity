@@ -31,7 +31,7 @@ public class CuentaServiceImpl implements ICuentaService {
 
         Cuenta cuenta = new Cuenta();
         cuenta.setTipoCuenta(tipoCuenta);
-        cuenta.setNumeroCuenta(Integer.parseInt(generarNumeroCuenta(tipoCuenta)));
+        cuenta.setNumeroCuenta((generarNumeroCuenta(tipoCuenta)));
         cuenta.setEstado("ACTIVA");
         cuenta.setSaldo(0);
         cuenta.setGMF(GMF);

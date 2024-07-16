@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2733ad68-ba2b-40a0-a3c7-5f65509f8418" name="Changes" comment="Entidad Cliente, servicios personalizados">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/CuentaControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/CuentaServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/TransaccionControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/prueba/service/CuentaControllerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/prueba/service/CuentaServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/prueba/service/TransaccionControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/ITransaccionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Repository/ITransaccionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/Entity/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/Entity/Cuenta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/CuentaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/prueba/service/CuentaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/ClienteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/ClienteControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/ClienteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/ClienteServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/ITransaccionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/Repository/ITransaccionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/CuentaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/prueba/service/CuentaServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/Entity/Cuenta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/Entity/Cuenta.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/prueba/service/CuentaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/prueba/service/CuentaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/prueba/service/CuentaServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/prueba/service/CuentaServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +68,7 @@
     "JUnit.CuentaServiceImplTest.executor": "Run",
     "JUnit.CuentaServiceImplTest.testCrearCuenta.executor": "Run",
     "JUnit.CuentaServiceTest.executor": "Run",
-    "JUnit.CuentaServiceTest.testCrearCuenta.executor": "Debug",
+    "JUnit.CuentaServiceTest.testCrearCuenta.executor": "Run",
     "JUnit.TransaccionControllerTest.realizarTransferencia.executor": "Run",
     "Maven.prueba [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -123,7 +117,22 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CuentaServiceTest">
+  <component name="RunManager" selected="JUnit.CuentaControllerTest.obtenerCuentaPorId">
+    <configuration name="CuentaControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prueba" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.prueba.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.prueba.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.prueba.service.CuentaControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CuentaControllerTest.crearCuenta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prueba" />
       <extension name="coverage">
@@ -187,22 +196,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransaccionControllerTest.realizarTransferencia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prueba" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.prueba.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.prueba.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.prueba.service.TransaccionControllerTest" />
-      <option name="METHOD_NAME" value="realizarTransferencia" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PruebaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="prueba" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.prueba.PruebaApplication" />
@@ -212,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CuentaServiceTest" />
-        <item itemvalue="JUnit.CuentaServiceTest.testCrearCuenta" />
         <item itemvalue="JUnit.CuentaControllerTest.obtenerCuentaPorId" />
+        <item itemvalue="JUnit.CuentaControllerTest" />
+        <item itemvalue="JUnit.CuentaServiceTest.testCrearCuenta" />
+        <item itemvalue="JUnit.CuentaServiceTest" />
         <item itemvalue="JUnit.CuentaControllerTest.crearCuenta" />
-        <item itemvalue="JUnit.TransaccionControllerTest.realizarTransferencia" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +236,7 @@
       <workItem from="1720764005145" duration="9576000" />
       <workItem from="1720903922206" duration="3173000" />
       <workItem from="1720907240463" duration="1329000" />
-      <workItem from="1720937376579" duration="40641000" />
+      <workItem from="1720937376579" duration="42433000" />
     </task>
     <task id="LOCAL-00001" summary="Entidad Cliente, servicios personalizados">
       <option name="closed" value="true" />
@@ -281,17 +274,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Entidad Cliente, servicios personalizados" />
     <option name="LAST_COMMIT_MESSAGE" value="Entidad Cliente, servicios personalizados" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/prueba/service/CuentaServiceImpl.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/prueba$ClienteServiceTest.ic" NAME="ClienteServiceTest Coverage Results" MODIFIED="1721082302113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

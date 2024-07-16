@@ -20,7 +20,7 @@ public class Cuenta {
     private String tipoCuenta;
 
     @Column(name = "numeroCuenta", length = 9, nullable = false )
-    private int numeroCuenta;
+    private String numeroCuenta;
 
     @Column ( name = "estado", length = 20, nullable = false )
     private String estado;
