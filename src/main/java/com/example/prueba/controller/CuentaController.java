@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/cuenta")
 public class CuentaController {
 
-
-    private  final ICuentaService cuentaService;
+    private final ICuentaService cuentaService;
 
     @PostMapping("/crear")
     public Cuenta crearCuenta(@RequestParam long id, @RequestParam String tipoCuenta, @RequestParam long GMF) {
@@ -31,7 +30,7 @@ public class CuentaController {
     }
 
     @GetMapping("/{cuentaId}")
-    public Cuenta obtenerCuentaPorId(@PathVariable long id) {
+    public Cuenta obtenerCuentaPorId(@PathVariable("cuentaId") long id) {
         return cuentaService.obtenerCuentaPorId(id).orElseThrow(() -> new IllegalArgumentException("Cuenta no encontrada"));
     }
 
